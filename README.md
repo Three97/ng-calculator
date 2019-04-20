@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
 
+Check it out [here](https://three97.github.io/ng-calculator/index.html).
+
 Arguably, Angular is overkill for such a simple app, but it shows how things are wired up.
 
 ## Development server
