@@ -1,0 +1,32 @@
+<div class="overall">
+  <h1 class="app-header">{{ msg }}</h1>
+  <div class="title-bar">
+    <div class="dots">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+    </div>
+  </div>
+  <div class="calculator fancify">
+    <div class="result">{{current || 0}}</div>
+    <div (click)="clear()" class="key modifier-key">AC</div>
+    <div (click)="negate()" class="key modifier-key">±</div>
+    <div (click)="percentage()" class="key modifier-key">%</div>
+    <div (click)="divide()" class="key operator">÷</div>
+    <div (click)="append('7')" class="key number-key">7</div>
+    <div (click)="append('8')" class="key number-key">8</div>
+    <div (click)="append('9')" class="key number-key">9</div>
+    <div (click)="multiply()" class="key operator">x</div>
+    <div (click)="append('4')" class="key number-key">4</div>
+    <div (click)="append('5')" class="key number-key">5</div>
+    <div (click)="append('6')" class="key number-key">6</div>
+    <div (click)="subtract()" class="key operator">-</div>
+    <div (click)="append('1')" class="key number-key">1</div>
+    <div (click)="append('2')" class="key number-key">2</div>
+    <div (click)="append('3')" class="key number-key">3</div>
+    <div (click)="add()" class="key operator">+</div>
+    <div (click)="appendZero()" class="key number-key zero">0</div>
+    <div (click)="addDecimal()" class="key number-key">.</div>
+    <div (click)="calculate()" class="key operator">=</div>
+  </div>
+</div>
